@@ -1,0 +1,247 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.main-div, .loggedin-div{
+    margin: 50px auto;
+    padding: 20px;
+}
+
+.main-div input{
+    display: block;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    padding: 15px;
+    outline: none;
+    width: 100%;
+    margin-bottom: 20px;
+    transition: 0.3s;
+    -moz-transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+
+.main-div input:focus{
+    border: 1px solid #777;
+}
+
+.main-div button, .loggedin-div button{
+    background-color: #5f8ffc;
+    color: #fff;
+    border: 0px;
+    border-radius: 5px;
+    padding: 15px;
+    display: block;
+    width: 100%;
+    transition: 0.3s;
+    -moz-transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+
+.main-div button:hover, .loggedin-div button:hover{
+    background-color: #fff;
+    color: #5d8ff5;
+    border: 1px solid #5d8ff5;
+    cursor: pointer;
+}
+
+.main-div h3{
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#logout{
+    margin-left: 10px;
+    padding: 5px 15px;
+    height: 25px;
+    width: 71px;
+}
+
+.loggedin-div{
+    display: none;
+}
+
+.loggedin-div h3{
+    margin: auto;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#userbox{
+    border: solid 2px black;
+    margin-top: 10px;
+    background-color: gray;
+    display: flex;
+    flex-direction: row;
+}
+
+#loading{
+    position: fixed;
+    background-color: black;
+    opacity: .4;
+    width: calc(100vw - 40px - 4px);
+    height: 250px;
+}
+
+#load{
+    opacity: 1;
+    margin: auto;
+    margin-top: 97px;
+    width: 50px;
+    height: 50px;
+    display: fixed;
+    border-radius: 50%;
+    border: solid 3px gray;
+    border-right: solid 3px white;
+    animation: rotate 1s linear infinite;
+}
+
+.user_data{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#userp{
+    font-size: 12px;
+}
+
+#list{
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+    height: 250px;
+    border-right: solid 2px;
+    margin: 0;
+    width: 70%;
+    color: white;
+    text-align: center;
+    background-color: #000042;
+}
+
+
+#list a{
+    height: fit-content;
+    text-decoration: none;
+    color: white;
+}
+#list p{
+    background-color: #064cd8;
+    transition: background-color .3s;
+    padding: 10px;
+    margin: 0px;
+}
+
+#list p:hover{
+    background-color: #25acce;
+}
+
+#list hr{
+    margin: 0px;
+}
+
+#option{
+    color: white;
+    margin: 0;
+    width: 30%;
+}
+
+#option label{
+    font-weight: bold;
+    font-style: italic;
+    font-size: 12px;
+    text-align: center;
+    height: calc(50% - 1px);
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input[type="radio"]{
+    display: none;
+}
+
+label[for="boletos"], label[for="mydoc"]{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: all .3s;
+}
+
+label[for="boletos"] img{
+    width: 60px;
+}
+
+label[for="mydoc"] img{
+    width: 60px;
+}
+
+#option hr{
+    margin: 0;
+}
+
+#upload{
+    border: solid 2px black;
+    border-top: none;
+    background-color: gray;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+}
+
+#uploader{
+    margin-top: 10px;
+    width: 95%;
+}
+
+#filebutton{
+    margin: 5px auto;
+}
+
+@media screen and (max-width: 350px){
+    #filebutton{
+        font-size: 12px;
+    }    
+}
+
+@media screen and (min-width: 375px){
+    .loggedin-div h3{
+        width: 335px;
+    }   
+}
+
+@media screen and (min-width: 440px){
+    #userp{
+        font-size: 13px;
+    }
+}
+
+@media screen and (min-width: 700px){
+    .main-div, .loggedin-div{
+        width: 660px;
+    }
+    #loading{
+        width: calc(660px - 4px);
+    }
+    #logout{
+        font-weight: bold;
+    }
+    #userp{
+        font-size: 14px;
+    }
+}
+
+@keyframes rotate{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
