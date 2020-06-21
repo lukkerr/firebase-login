@@ -8,4 +8,3 @@
 <p><b>Boletos</b> - documentos enviados pela empresa ao funcionário.</p>
 <p><b>Documentos</b> - seriam envios do funcionário para a Empresa.</p>
 <hr>
-<a href="./home">Ir para a Tela de Login</a>
