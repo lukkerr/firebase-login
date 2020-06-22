@@ -16,4 +16,4 @@
   <img src='./screenshots/logando.gif' width='49%'>
   <img src='./screenshots/enviando_doc.gif' width='49%'><hr>
 </div>
-<p align='center'><a href='./index.html'>Ir para Código</a></p>
+<p align='center'><a href='./index.html'>Ir para Código</a></p><hr>
